@@ -31,18 +31,25 @@ The code snippet will look like:
 You can authenticate and manage users from a variety of providers without server-side code.
 To do that, set up sign-in method in the Firebase project. To set up, navigate to "Authentication" tab in the Firebase app and set up the sign-in methods
 according to your choice.
-Granted Google sign-in is enables, you can do the following to authenticate users:
+Granted Google sign-in is enabled, you can do the following to authenticate users:
 
 *html*
 ````
 <button id="login-btn" class="btn-controls visible" onclick="gLogin()">Login</button>
+<button id="login-btn" class="btn-controls hidden" onclick="logout()">Logout</button>
 
 ````
 *js*
 ````
+//login
 function gLogin(){
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithRedirect(provider);
+}
+
+//logout
+function logout(){
+    firebase.auth().signOut();
 }
 
 //handling redirect

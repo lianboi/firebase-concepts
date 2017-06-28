@@ -4,6 +4,10 @@ function gLogin(){
   firebase.auth().signInWithRedirect(provider);
 }
 
+function logout() {
+  firebase.auth().signOut();
+}
+
 (function handleRedirect(firebase){
   firebase.auth().getRedirectResult().then(function(result) {
     if (result.credential) {
