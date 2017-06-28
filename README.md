@@ -1,14 +1,14 @@
 # firebase-concepts
 
-#Firebase
+# Firebase
 Firebase is a mobile and web application development platform.
 For more details, please check https://firebase.google.com/
 
-#Getting Started
+# Getting Started
 To get started with Firebase, sign in to https://console.firebase.google.com/
 Click on "Add project", and enter project name in the dialog window and then click "create project" button.
 
-#Adding Firebase to your web app
+# Adding Firebase to your web app
 From your project overview window in the Firebase console, click the "Add Firebase to your web app" to get
 the code snippets to add to your web app.
 The code snippet will look like:
@@ -27,18 +27,18 @@ The code snippet will look like:
   firebase.initializeApp(config);
 </script>
 ````
-#Authentication
+# Authentication
 You can authenticate and manage users from a variety of providers without server-side code.
 To do that, set up sign-in method in the Firebase project. To set up, navigate to "Authentication" tab in the Firebase app and set up the sign-in methods
 according to your choice.
 Granted Google sign-in is enables, you can do the following to authenticate users:
 
-html
+*html*
 ````
 <button id="login-btn" class="btn-controls visible" onclick="gLogin()">Login</button>
 
 ````
-js
+*js*
 ````
 function gLogin(){
   var provider = new firebase.auth.GoogleAuthProvider();

@@ -16,7 +16,8 @@ function gLogin(){
         email: 'hello@email.com',
         profile_picture : 'no-link'
       });
-      document.getElementById("logout-btn").re
+      document.getElementById("logout-btn").className = "btn-controls visible";
+      document.getElementById("login-btn").className = "btn-controls hidden";
     }
     // The signed-in user info.
     var user = result.user;
