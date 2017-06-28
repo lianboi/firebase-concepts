@@ -33,13 +33,13 @@ To do that, set up sign-in method in the Firebase project. To set up, navigate t
 according to your choice.
 Granted Google sign-in is enabled, you can do the following to authenticate users:
 
-*html*
+*html:*
 ````
 <button id="login-btn" class="btn-controls visible" onclick="gLogin()">Login</button>
 <button id="login-btn" class="btn-controls hidden" onclick="logout()">Logout</button>
 
 ````
-*js*
+*js:*
 ````
 //login
 function gLogin(){
