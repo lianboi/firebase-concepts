@@ -111,3 +111,19 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
     // ...
   });
 ````
+
+# Realtime database
+**Read and Write data**
+To read and write data to the database, you need a reference to the database. To get a reference to the database service, use **firebase.database()**.
+
+````
+var db = firebase.database();
+````
+
+*Write operation*
+````
+//firebase.database().ref("PATH/TO/THE/KEY_OR_FIELD").set(JSON_OBJECT)
+//e.g
+firebase.database().ref('users/'+user_id).set({ name:'Elbie', age: 101});
+````
+N.B: The set() method replace the existing data in the referenced path(if any).
