@@ -91,7 +91,7 @@ In the Firebase console, open the Auth section.
 On the Sign in method tab, enable the Email/password sign-in method and click Save.
 
 Create a new account by passing the new user's email address and password to 
-** createUserWithEmailAndPassword **:
+**createUserWithEmailAndPassword**:
 ````
 firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
   // Handle Errors here.
@@ -102,7 +102,7 @@ firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(e
 ````
 
 # Login using email and password
-To login using email and password, do:
+To login using email and password, use **signInWithEmailAndPassword**:
 ````
 firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
