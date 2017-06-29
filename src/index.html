@@ -9,11 +9,13 @@
 <!-- header -->
 <div class="header">
     <div>
-        <h1>Hello and Welcome To Firebase</h1>
+        <h1>Hello and Welcome To Firebase app sample.</h1>
     </div>
     <div>
-        <button id="login-btn" class="btn-controls visible" onclick="gLogin()">Login</button>
+        <button id="google-login-btn" class="login-btn btn-controls visible" onclick="gLogin()">G+ Login</button>
+        <button id="email-login-btn" class="login-btn btn-controls visible" onclick="eLogin()">Email Login</button>
         <button id="logout-btn" class="btn-controls hidden" onclick="logout()">Logout</button>
+        <button id="signup-btn" class="btn-controls visible" onclick="createAcount()">SignUp</button>
     </div>
 </div>
 <div class="container">
@@ -27,5 +29,7 @@
 </div>
 <script type="application/javascript" src="./js/config.js"></script>
 <script type="application/javascript" src="./js/auth.js"></script>
+<script type="application/javascript" src="./js/sign-up.js"></script>
+<script type="application/javascript" src="./js/services/firebase-db.js"></script>
 </body>
 </html>

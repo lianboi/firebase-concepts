@@ -72,4 +72,31 @@ firebase.auth().getRedirectResult().then(function(result) {
     var credential = error.credential;
     // ...
   });
+  
+//Checking authentication status
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User is signed in.
+      console.log('user is signed in,', user);
+    } else {
+      // No user is signed in.
+      console.log("user is not authenticated", user);
+    }
+  });
+  
+````
+# Signing up using email and password
+Enable Email/Password sign-in:
+In the Firebase console, open the Auth section.
+On the Sign in method tab, enable the Email/password sign-in method and click Save.
+
+Create a new account by passing the new user's email address and password to 
+** createUserWithEmailAndPassword **:
+````
+firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
 ````
