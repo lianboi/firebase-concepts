@@ -143,10 +143,10 @@ The different type of events which can be listened to are:
 
 *child_removed* event - This event will be triggered once every time a child is removed. The DataSnapshot passed into the callback will be the old data for the child that was removed. A child will get removed when either:
 
-..* a client explicitly calls remove() on that child or one of its ancestors
-..* a client calls set(null) on that child or one of its ancestors
-..* that child has all of its children removed
-..* there is a query in effect which now filters out the child (because it's sort order changed or the max limit was hit)
+* a client explicitly calls remove() on that child or one of its ancestors
+* a client calls set(null) on that child or one of its ancestors
+* that child has all of its children removed
+* there is a query in effect which now filters out the child (because it's sort order changed or the max limit was hit)
 
 *child_changed* event - This event will be triggered when the data stored in a child (or any of its descendants) changes. Note that a single child_changed event may represent multiple changes to the child. The DataSnapshot passed to the callback will contain the new child contents. For ordering purposes, the callback is also passed a second argument which is a string containing the key of the previous sibling child by sort order, or null if it is the first child.
 
