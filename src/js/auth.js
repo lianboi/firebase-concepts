@@ -62,11 +62,11 @@ function logout() {
       var token = result.credential.accessToken;
       // ...
       /*console.log("authentication redirect result object:", result);
-      firebase.database().ref('users/hello-user').set({
-        username: 'hello',
-        email: 'hello@email.com',
-        profile_picture : 'no-link'
-      });*/
+       firebase.database().ref('users/hello-user').set({
+       username: 'hello',
+       email: 'hello@email.com',
+       profile_picture : 'no-link'
+       });*/
       //localStorage.setItem('accessToken', token);
     }
     // The signed-in user info.
