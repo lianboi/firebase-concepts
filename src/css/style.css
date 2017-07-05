@@ -7,13 +7,13 @@ div.header{
 div.header div{
     display: inline-block;
 }
-.btn-controls{
+/*.btn-controls{
     height:40px;
     width:70px;
     border: 1px solid white;
     text-align: center;
     cursor: pointer;
-}
+}*/
 .hidden{
     display: none;
 }
