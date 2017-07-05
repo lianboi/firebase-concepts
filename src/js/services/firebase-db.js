@@ -14,11 +14,16 @@ function writeUserData(userId, name, email, profile_img){
 }
 
 firebase.auth().onAuthStateChanged(function (user) {
-  user ? writeUserData(user.uid, "lianboi", "lbthomte@yahoo.com", '') : false;
-  let dbRef = firebase.database().ref('users/'+user.uid);
-  listenDataRef(dbRef, 'value', function(snapshot){
-    //console.log("data changes in db.....", snapshot.val());
-  });
+  console.log("onAuthStateChanged...user is:", user);
+  if(user) {
+    writeUserData(user.uid, "lianboi", "lbthomte@yahoo.com", '');
+
+    let dbRef = firebase.database().ref('users/'+user.uid);
+
+    listenDataRef(dbRef, 'value', function(snapshot){
+      //console.log("data changes in db.....", snapshot.val());
+    });
+  }
 });
 
 //writeUserData("testss-user-id", "thomte", "thomte@email.com", '');

@@ -2,21 +2,31 @@
 <html>
 <head>
     <title>Firebase app</title>
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 </head>
 <body>
 <!-- header -->
-<div class="header">
-    <div>
-        <h1>Hello and Welcome To Firebase app sample.</h1>
-    </div>
-    <div>
-        <button id="google-login-btn" class="login-btn btn-controls visible" onclick="gLogin()">G+ Login</button>
-        <button id="email-login-btn" class="login-btn btn-controls visible" onclick="eLogin()">Email Login</button>
-        <button id="logout-btn" class="btn-controls hidden" onclick="logout()">Logout</button>
-        <button id="signup-btn" class="btn-controls visible" onclick="createAcount()">SignUp</button>
-    </div>
+<div class="container-fluid">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Hello Firebase!</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../html/sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
 <div class="container">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>

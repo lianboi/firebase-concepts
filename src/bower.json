@@ -1,0 +1,23 @@
+{
+  "name": "ttn-firebase",
+  "homepage": "https://github.com/lianboi/firebase-concepts",
+  "authors": [
+    "lianboi <lbthomte@yahoo.com>"
+  ],
+  "description": "no description",
+  "main": "",
+  "keywords": [
+    "firebase"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

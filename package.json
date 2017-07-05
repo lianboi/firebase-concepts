@@ -1,0 +1,25 @@
+{
+  "name": "firebase-concepts",
+  "version": "1.0.0",
+  "description": "no description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lianboi/firebase-concepts.git"
+  },
+  "keywords": [
+    "firebase"
+  ],
+  "author": "LB Thomte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lianboi/firebase-concepts/issues"
+  },
+  "homepage": "https://github.com/lianboi/firebase-concepts#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

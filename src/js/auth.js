@@ -36,17 +36,17 @@ function logout() {
       document.getElementById("logout-btn").className = "btn-controls visible";
       let loginBtns = document.getElementsByClassName("login-btn");
       for(let i=0, j=loginBtns.length; i<j; i++){
-        loginBtns[i].className = 'login-btn btn-controls hidden';
+        loginBtns[i].className = 'btn login-btn btn-controls hidden';
       }
       document.getElementById("signup-btn").className = "btn-controls hidden";
     } else {
       // No user is signed in.
       //console.log("user is not authenticated", user);
-      document.getElementById("logout-btn").className = "btn-controls hidden";
-      document.getElementById("signup-btn").className = "btn-controls visible";
+      document.getElementById("logout-btn").className = "btn btn-controls hidden";
+      document.getElementById("signup-btn").className = "btn btn-controls visible";
       let loginBtns = document.getElementsByClassName("login-btn");
       for(let i=0, j=loginBtns.length; i<j; i++){
-        loginBtns[i].className = 'login-btn btn-controls visible';
+        loginBtns[i].className = 'btn login-btn btn-controls visible';
       }
     }
     //To get the current user details
