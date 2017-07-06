@@ -1,5 +1,4 @@
 function signUp(email, password){
-  console.log("arguments", email, password);
   firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user){
     //user data
     window.location.href="/";

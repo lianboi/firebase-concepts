@@ -33,21 +33,13 @@ function logout() {
     if (user) {
       // User is signed in.
       //console.log('user is signed in,', user);
-      document.getElementById("logout-btn").className = "btn-controls visible";
-      let loginBtns = document.getElementsByClassName("login-btn");
-      for(let i=0, j=loginBtns.length; i<j; i++){
-        loginBtns[i].className = 'btn login-btn btn-controls hidden';
-      }
-      document.getElementById("signup-btn").className = "btn-controls hidden";
+      document.getElementById("header-authenticated").className = "nav navbar-nav navbar-right visible";
+      document.getElementById("header-unauthenticated").className = "nav navbar-nav navbar-right hidden";
     } else {
       // No user is signed in.
       //console.log("user is not authenticated", user);
-      document.getElementById("logout-btn").className = "btn btn-controls hidden";
-      document.getElementById("signup-btn").className = "btn btn-controls visible";
-      let loginBtns = document.getElementsByClassName("login-btn");
-      for(let i=0, j=loginBtns.length; i<j; i++){
-        loginBtns[i].className = 'btn login-btn btn-controls visible';
-      }
+      document.getElementById("header-authenticated").className = "nav navbar-nav navbar-right hidden";
+      document.getElementById("header-unauthenticated").className = "nav navbar-nav navbar-right visible";
     }
     //To get the current user details
     //console.log("firebase.currentUser is:", firebase.auth().currentUser);

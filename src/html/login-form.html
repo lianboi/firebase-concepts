@@ -18,12 +18,16 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">Page 1</a></li>
-                <li><a hrwef="#">Page 2</a></li>
+                <li><a href="#">Page 2</a></li>
                 <li><a href="#">Page 3</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul id="header-authenticated" class="nav navbar-nav navbar-right hidden">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span><span id="user-email"></span></a></li>
+                <li><a href="javascript:logout()"><span class="glyphicon glyphicon-log-in"></span>&nbspLogout</a></li>
+            </ul>
+            <ul id="header-unauthenticated" class="nav navbar-nav navbar-right visible">
                 <li><a href="../html/sign-up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="../html/login-form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </nav>
@@ -44,13 +48,13 @@
                 </label>
                 <input type="password" name="password" id="password" class="form-control" placeholder="password">
             </div>
-            <div class="form-group">
-                <button onclick="emailLogin()" class="btn btn-default">Login</button>
-            </div>
-            <div class="form-inline">
-                <button onclick="gLogin()" class="btn btn-default">G+ Login</button>
-            </div>
         </form>
+        <div class="form-group">
+            <button onclick="emailLogin()" class="btn btn-default">Login</button>
+        </div>
+        <div class="form-inline">
+            <button onclick="gLogin()" class="btn btn-default">G+ Login</button>
+        </div>
     </div>
 </div>
 <!--Footer -->
